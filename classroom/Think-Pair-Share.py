@@ -1,5 +1,4 @@
 class Student:
-
     def __init__(self, name, age):
         self.name = name
         self.age = age
@@ -12,7 +11,6 @@ class Student:
         return self.age
 
     def setScore(self, count):
-        ls = []
         for i in range(count):
             s = eval(input('Input Score: '))
             self.score.append(s)
