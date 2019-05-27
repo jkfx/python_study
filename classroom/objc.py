@@ -29,7 +29,7 @@ del laowang
 print('over')
 
 xiaoming = Person('小明', 20)
-xiaohong = xiaoming
+xiaohong = xiaoming     # 硬链接
 print('开枪打小明')
 del xiaoming
 print('del 小明，但小明没死')
