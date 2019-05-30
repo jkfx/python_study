@@ -1,0 +1,8 @@
+Listbox窗口部件
+　　简单说明：　　
+
+　　Text是tkinter类中提供的的列表框部件，显示供选方案的一个列表。listbox能够被配置来得到radiobutton或checklist的行为。
+
+　　什么时候用：
+
+　　在有一个很多内容选项组成的列表提供用户选择时会用到。
