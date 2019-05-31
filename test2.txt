@@ -1,0 +1,6 @@
+
+Hello,World!
+在github上测试ubuntu下git的使用
+    ---此文件是在github上创建的
+    ---by jkfx
+    ---2019/5/31
