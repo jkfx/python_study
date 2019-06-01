@@ -11,6 +11,7 @@ l = Label(
     w,
     text='你好！this is Tkinter',
     bg='green',  # bg 为背景
+    fg='white',  # fg 为前景 字体颜色
     font=('Arial', 12),  # font 为字体
     width=30,  # width 为长
     height=2  # height 为高
