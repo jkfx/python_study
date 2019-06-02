@@ -16,14 +16,14 @@ def print_selection():
     elif (var1.get() == 0) and (var2.get() == 1):
         l.config(text='I love only C++')
     elif (var1.get() == 0) and (var2.get() == 0):
-        l.config('I do not love either')
+        l.config(text='I do not love either')
     else:
         l.config(text='I love both')
 
 
 # 定义两个Checkbutton选项并放置
-var1 = StringVar()  # 定义var1和var2整型变量用来存放选择行为返回值
-var2 = StringVar()
+var1 = IntVar()  # 定义var1和var2整型变量用来存放选择行为返回值
+var2 = IntVar()
 
 c1 = Checkbutton(w,
                  text='Python',
