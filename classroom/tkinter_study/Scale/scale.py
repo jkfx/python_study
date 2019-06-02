@@ -21,7 +21,7 @@ s = Scale(w,
           to=10,
           orient=HORIZONTAL,
           length=200,
-          showvalue=100,
+          showvalue=2,
           resolution=0.1,
           command=print_selection)
 s.pack()

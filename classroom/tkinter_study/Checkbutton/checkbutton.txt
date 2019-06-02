@@ -5,3 +5,54 @@
 　　什么时候用：
 
 　　在有一个很多内容选项组成的选项列表提供用户选择时会用到，用户一次可以选择多个。
+
+
+语法格式如下：
+
+-- w = Checkbutton ( master, option=value, ... )
+master: 按钮的父容器。
+options: 可选项，即该按钮的可设置的属性。这些选项可以用键 = 值的形式设置，并以逗号分隔。
+
+
+序号	可选项 & 描述
+
+--activebackground    当鼠标放上去时，按钮的背景色
+--activeforeground    当鼠标放上去时，按钮的前景色
+--bg  按钮的背景色
+--bitmap  位图
+--bd  边框的大小，默认为 2 个像素
+--command 关联的函数，当按钮被点击时，执行该函数
+--cursor  光标的形状设定，如arrow, circle, cross, plus 等
+--disabledforeground  禁用选项的前景色
+--font    文本字体
+--fg  选项的前景色
+--height  复选框文本行数，默认为 1。
+--highlightcolor  聚焦的高亮颜色
+--image   是否使用图标
+--justify 显示多行文本的时候,设置不同行之间的对齐方式，可选项包括LEFT, RIGHT, CENTER
+--offvalue  Checkbutton 的值不仅仅是 1 或 0，可以是其他类型的数值，可以通过 onvalue 和 offvalue 属性设置 Checkbutton 的状态值。
+--onvalue   Checkbutton 的值不仅仅是 1 或 0，可以是其他类型的数值，可以通过 onvalue 和 offvalue 属性设置 Checkbutton 的状态值。
+--padx    按钮在x轴方向上的内边距(padding)，是指按钮的内容与按钮边缘的距离，默认为 1 像素。
+--pady    按钮在y轴方向上的内边距(padding)，默认为 1 像素。
+--relief  边框样式，设置控件3D效果，可选的有：FLAT、SUNKEN、RAISED、GROOVE、RIDGE。默认为 FLAT。
+--selectcolor 选中后的颜色，默认为 selectcolor="red"。
+--selectimage 选中后的图片
+--state   状态，默认为 state=NORMAL
+--text    显示的文本，使用 "\n" 来对文本进行换行。
+--underline   下划线。默认按钮上的文本都不带下划线。取值就是带下划线的字符串索引，为 0 时，第一个字符带下划线，为 1 时，前两个字符带下划线，以此类推
+--variable    变量，variable 的值为 1 或 0，代表着选中或不选中
+--width   默认宽度是复选框的文本或图像决定的，你可以设置指定字符数。
+--wraplength  是否设置包裹。
+
+
+以下为常用的方法：
+序号	方法 & 描述
+--deselect()    清除复选框选中选项。
+
+--flash()   在激活状态颜色和正常颜色之间闪烁几次单选按钮，但保持它开始时的状态。
+
+--invoke()  可以调用此方法来获得与用户单击单选按钮以更改其状态时发生的操作相同的操作
+
+--select()  设置按钮为选中。
+
+--toggle()  选中与没有选中的选项互相切换

@@ -5,3 +5,51 @@
 　　什么时候用：
 
 　　在比如像用户交互界面等，需要提供设计的图标、图形、logo等信息是可以用到画布。
+
+
+语法格式如下：
+
+w = Canvas ( master, option=value, ... )
+master: 按钮的父容器。
+options: 可选项，即该按钮的可设置的属性。这些选项可以用键 = 值的形式设置，并以逗号分隔。
+
+
+序号	可选项 & 描述
+
+--bd  边框宽度，单位像素，默认为 2 像素。
+--bg  背景色
+--confine 如果为 true (默认), 画布不能滚动到可滑动的区域外。
+--cursor  光标的形状设定，如arrow, circle, cross, plus 等
+--height  高度
+--highlightcolor  要高亮的颜色
+--relief  边框样式,可选值为 FLAT、SUNKEN、RAISED、GROOVE、RIDGE。 默认为 FLAT。
+--scrollregion    一个元组 tuple (w, n, e, s) ，定义了画布可滚动的最大区域，w 为左边，n 为头部，e 为右边，s 为底部。
+--width   画布在 X 坐标轴上的大小。
+--xscrollincrement    用于滚动请求水平滚动的数量值。
+--xscrollcommand  水平滚动条，如果画布是可滚动的，则该属性是水平滚动条的 .set（）方法。
+--yscrollincrement    类似 xscrollincrement, 但是垂直方向。
+--yscrollcommand  垂直滚动条，如果画布是可滚动的，则该属性是垂直滚动条的 .set（）方法。
+
+
+Canvas 组件支持以下标准选项：
+
+arc − 创建一个扇形
+--coord = 10, 50, 240, 210
+--arc = canvas.create_arc(coord, start=0, extent=150, fill="blue")
+
+
+image − 创建图像
+--filename = PhotoImage(file = "sunshine.gif")
+--image = canvas.create_image(50, 50, anchor=NE, image=filename)
+
+
+line − 创建线条
+--line = canvas.create_line(x0, y0, x1, y1, ..., xn, yn, options)
+
+
+oval − 创建一个圆
+--oval = canvas.create_oval(x0, y0, x1, y1, options)
+
+
+polygon − 创建一个至少有三个顶点的多边形
+--oval = canvas.create_polygon(x0, y0, x1, y1,...xn, yn, options)
