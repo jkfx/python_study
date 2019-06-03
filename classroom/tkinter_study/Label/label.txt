@@ -1,0 +1,23 @@
+-Anchor 标签中文本的位置
+
+-background(bg) 背景色
+
+-foreground(fg) 前景色
+
+-borderwidth(bd)    边框宽度
+
+-width  标签宽度
+
+-height 标签高度
+
+-bitmap 标签中的位图
+
+-font   字体
+
+-image  标签中的图片
+
+-justify    多行文本的对齐方式
+
+-text   标签中的文本，可以使用'\n'表示换行
+
+-textvariable   显示文本自动更新，与StringVar等配合着用

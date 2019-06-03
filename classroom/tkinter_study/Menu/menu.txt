@@ -5,3 +5,25 @@
 　　什么时候用：
 
 　　在比如像软件或网页交互界面等，需要提供菜单选项功能提供用户选择菜单选项功能时用到。
+
+
+==参数： 
+-tearoff 分窗，0为在原窗，1为点击分为两个窗口
+-bg,fg   背景，前景
+-borderwidth 边框宽度
+-font    字体
+-activebackgound 点击时背景，同样有activeforeground，activeforeground，activeborderwidth，disabledforeground
+-cursor
+-postcommand
+-selectcolor 选中时背景
+-takefocus
+-title 
+-type
+-relief
+
+==方法：
+-menu.add_cascade    添加子选项
+-menu.add_command    添加命令（label参数为显示内容）
+-menu.add_separator 添加分隔线
+-menu.add_checkbutton   添加确认按钮
+-delete 删除

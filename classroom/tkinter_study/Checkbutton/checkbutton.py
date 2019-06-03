@@ -1,9 +1,7 @@
 from tkinter import *
-
 w = Tk()
 w.title('CheckButton')
 w.geometry('500x300')
-
 # 在图形界面上创建一个标签label用以显示并放置
 l = Label(w, bg='yellow', width=20, text='empty')
 l.pack()
@@ -30,14 +28,17 @@ c1 = Checkbutton(w,
                  variable=var1,
                  onvalue=1,
                  offvalue=0,
-                 command=print_selection)
+                 command=print_selection,
+                 cursor='circle',
+                 relief=GROOVE)
 c1.pack()
 c2 = Checkbutton(w,
                  text='C++',
                  variable=var2,
                  onvalue=1,
                  offvalue=0,
-                 command=print_selection)
+                 command=print_selection,
+                 cursor='cross',
+                 relief=RAISED)
 c2.pack()
-
 w.mainloop()

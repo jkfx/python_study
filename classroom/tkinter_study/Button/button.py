@@ -27,6 +27,7 @@ def hit_me():
     if on_hit == False:
         on_hit = True
         var.set('you hit me')
+        # b.config(state=DISABLED)  # 重写按钮状态，按完一次后不能再次按
     else:
         on_hit = False
         var.set('')
@@ -38,7 +39,11 @@ b = Button(w,
            font=('Arial', 12),
            width=10,
            height=1,
-           command=hit_me)
+           command=hit_me,
+           activebackground='blue',
+           activeforeground='red',
+           relief=RIDGE)
+
 b.pack()
 
 # 主窗口循环显示
