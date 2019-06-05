@@ -32,7 +32,7 @@ filemenu.add_command(label='---货币', command=do_job)
 filemenu.add_command(label='---长度', command=do_job)
 filemenu.add_command(label='---重量', command=do_job)
 filemenu.add_separator()  # 添加一条分隔线
-filemenu.add_command(label='Exit', command=root.quit)
+filemenu.add_command(label='退出', command=root.quit)
 # secound 菜单
 helpmenu = Menu(root, tearoff=0)
 menubar.add_cascade(label='帮助', menu=helpmenu)
