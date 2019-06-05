@@ -1,0 +1,27 @@
+Grid：http://effbot.org/tkinterbook/grid.htm
+grid 是方格, 所以所有的内容会被放在这些规律的方格中。
+
+
+-row和column 它表示某个控件要放在第几行网格或第几列网格，下标都是从0开始计的
+xxx.grid（column=1,row=1）
+
+-rowspan和columnspan	它表示某个控件将会竖着跨几行或横着跨几列，默认都是1
+xxx.grid（column=1,row=1,columnspan=2）
+xxx.grid（column=1,row=1,rowspan=2）
+
+-padx和pady	它表示某个控件的外边距，即控件边缘和这个控件所在容器之间的间距，单位是像素
+xxx.grid（column=1,row=1,padx=10）
+xxx.grid（column=1,row=1,pady=10）
+
+-ipadx和ipady	它表示某个控件的内边距，即控件边缘和这个控件内容(文字图片什么的)的间距，单位是像素
+xxx.grid（column=1,row=1,ipadx=10）
+xxx.grid（column=1,row=1,ipady=10）
+
+-sticky	它表示某个控件在网格里的摆放方式，是左还是右，是上还是下，即使窗口被拉大也会按照指定方向对齐
+若sticky=N，表示North，尽可能往北面/上面停靠。
+若sticky=S，表示South，尽可能往南面/下面停靠。
+若sticky=W，表示West，尽可能往西边/左边停靠。
+若sticky=E，表示East，尽可能往东边/右边停靠。
+若sticky=NS，表示NorthSouth，尽可能往南北方向/上下拉伸。
+若sticky=EW，表示EastWest，尽可能往东西方向/左右拉伸。
+若sticky=CENTER，尽可能往中心停靠。

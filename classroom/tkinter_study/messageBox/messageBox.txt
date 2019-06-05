@@ -1,0 +1,35 @@
+简单说明：
+　　messageBox：消息框，用于显示你应用程序的消息框。(Python2中为tkMessagebox)，其实这里的messageBox就是我们平时看到的弹窗。 我们首先需要定义一个触发功能，来触发这个弹窗，这里我们就放上以前学过的button按钮，通过触发功能，调用messagebox吧，点击button按钮就会弹出提示对话框。下面给出messagebox提示信息的几种形式：
+
+tkinter.messagebox.showinfo(title='Hi', message='你好！')            # 提示信息对话窗
+tkinter.messagebox.showwarning(title='Hi', message='有警告！')       # 提出警告对话窗
+tkinter.messagebox.showerror(title='Hi', message='出错了！')         # 提出错误对话窗
+
+print(tkinter.messagebox.askquestion(title='Hi', message='你好！'))  # 询问选择对话窗return 'yes', 'no'
+print(tkinter.messagebox.askyesno(title='Hi', message='你好！'))     # return 'True', 'False'
+print(tkinter.messagebox.askokcancel(title='Hi', message='你好！'))  # return 'True', 'False'
+
+
+消息弹出框messagebox（在这里将messagebox简称为msgbox）
+消息弹出框用于info、warning、error提示框的弹出使用的，我们可以根据自己的需求来使用
+
+showinfo	info信息提示，弹出提示框
+msgbox.showinfo("INFO","Showinfo test")，INFO是提示框title，Showinfo test是提示框内容
+
+showwarning warning警告信息提示，弹出警告框
+msgbox.showwarning("WARNING","Warning test")，WARNING是警告框title，Warning test是警告框内容
+
+showerror   error错误信息提示，弹出错误框
+msgbox.showerror("ERROR","Error test")，ERROR是错误框title，Error test是错误框内容
+
+askquestion 提问窗口提示
+msgbox.askquestion("Question","Askquestion test")
+
+askokcancel	确定与取消窗口提示
+msgbox.askokcancel("OkCancel","Askokcancel test")
+
+askyesno	确定与取消窗口提示
+msgbox.askretrycancel("Retry","Askretrycancel test")
+
+askretrycancel	重试与取消窗口提示
+msgbox.askretrycancel("Retry","Askretrycancel test")
