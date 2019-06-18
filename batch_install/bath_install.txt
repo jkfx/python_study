@@ -1,0 +1,20 @@
+NumPy:  N维数据表示和运算
+Matplotlib: 二维数据可视化
+PIL:    图像处理(pillow)
+Scikit-Learn:   机器学习和数据挖掘(sklearn)
+Requests:   HTTP协议访问及网络爬虫
+Beautiful Soup: HTML和XML解析器(beautifulsoup4)
+Wheel:  python第三方库文件打包工具
+PyInstaller:    打包python源文件为可执行文件
+Jieba:  中文分词库
+Django: 最流行的web开发框架
+Flask:  轻量级web开发框架
+WeRoBot:    微信机器人开发框架
+SymPy:  数学符号计算工具
+Pandas: 高效数据分析和计算
+Networkx:   复杂网络和图结构的建模和分析
+PyQt5:  基于Qt的专业级GUI开发框架
+PyOpenGL:   多平台OpenGL开发接口
+PtPDF2: PDF文件内容提取及处理
+docopt: python命令行解析
+PyGame: 简单小游戏开发框架

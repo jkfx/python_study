@@ -66,11 +66,13 @@ root.update()        　　　　　刷新页面
     side:    　　　　组件在主窗口的位置，可以为'top','bottom','left','right'（使用时tkinter.TOP,tkinter.E）；
     fill            填充方式 (Y,垂直，X，水平）
     expand          1可扩展，0不可扩展
+
 --grid组件使用行列的方法放置组件的位置，参数有：
     column:         组件所在的列起始位置；
     columnspam:     组件的列宽；
     row：      　　　组件所在的行起始位置；
     rowspam：    　　组件的行宽；
+
 --place组件可以直接使用坐标来放置组件，参数有：
     anchor:    　　　组件对齐方式；
     x:        　　　 组件左上角的x坐标；
