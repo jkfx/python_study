@@ -30,10 +30,4 @@ print(soup.a.attrs)
 print('a.string')
 print(soup.a.string)
 
-
-
-
-
-
-
 os.system('pause')
